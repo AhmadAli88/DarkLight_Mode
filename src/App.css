@@ -1,0 +1,39 @@
+:root {
+  --body-background: white;
+  --body-color: black;
+  --link-color: navy;
+}
+* {
+  transition: all 0.3s ease-in-out;
+}
+[data-theme="dark"] {
+  --body-background: #282c34;
+  --body-color: white;
+  --link-color: cyan;
+}
+
+.sun_icon {
+  width: 30px;
+  position: absolute;
+  right: 35px;
+  z-index: 9999;
+}
+
+.moon_icon {
+  position: absolute;
+  left: 38px;
+  height: 27px;
+}
+.App-header {
+  background-color: var(--body-background);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--body-color);
+}
+.App-link {
+  color: var(--link-color);
+}
